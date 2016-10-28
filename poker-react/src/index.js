@@ -31,29 +31,78 @@ window.getDeck = function() {
   return cards;
 }
 // END OF STUFF TO NOT MODIFY
-var Card5=React.createClass({
-render: function() {
-return(
-  <div className="col-sm-2">
-    <h1><img className="img-responsive" src={"http://golearntocode.com/images/cards/"+ this.props.card+".png"} /></h1>
-  </div>
-)
-}
 
-  var App = React.createClass({
-    handClicked: function(){
-      this.setState({
-          hand: window.getDeck().shuffle()
-        })
-      },
+var Card1 = React.createClass({
+  render: function() {
+    return(
+      <div className="col-sm-2">
+        <h1><img className="img-responsive" src={"http://golearntocode.com/images/cards/"+ this.props.card + ".png"} /></h1>
+      </div>
+    )
+  }
+})
 
-      getInitialState: function() {
-            return {
-              hand: window.getDeck()
-            }
-          },
+var Card2 = React.createClass({
+  render: function() {
+    return(
+      <div className="col-sm-2">
+        <h1><img className="img-responsive" src={"http://golearntocode.com/images/cards/"+ this.props.card + ".png"} /></h1>
+      </div>
+    )
+  }
+})
 
+var Card3 = React.createClass({
+  render: function() {
+    return(
+      <div className="col-sm-2">
+        <h1><img className="img-responsive" src={"http://golearntocode.com/images/cards/"+ this.props.card + ".png"} /></h1>
+      </div>
+    )
+  }
+})
 
+var Card3 = React.createClass({
+  render: function() {
+    return(
+      <div className="col-sm-2">
+        <h1><img className="img-responsive" src={"http://golearntocode.com/images/cards/"+ this.props.card + ".png"} /></h1>
+      </div>
+    )
+  }
+})
+
+var Card4 = React.createClass({
+  render: function() {
+    return(
+      <div className="col-sm-2">
+        <h1><img className="img-responsive" src={"http://golearntocode.com/images/cards/"+ this.props.card + ".png"} /></h1>
+      </div>
+    )
+  }
+})
+
+var Card5 = React.createClass({
+  render: function() {
+    return(
+      <div className="col-sm-2">
+        <h1><img className="img-responsive" src={"http://golearntocode.com/images/cards/"+ this.props.card + ".png"} /></h1>
+      </div>
+    )
+  }
+})
+
+var App = React.createClass({
+  handClicked: function() {
+  this.setState({
+    hand: window.getDeck().shuffle()
+  })
+},
+  getInitialState: function() {
+      return {
+        hand: window.getDeck()
+      }
+    },
   render: function() {
     return (
       <div>
@@ -64,11 +113,11 @@ return(
           <Card3 card={this.state.hand[3]} />
           <Card4 card={this.state.hand[4]} />
           <Card5 card={this.state.hand[5]} />
-
-          <div className="col-sm-2">
+          <div className="col-sm-">
             <h1><a href="#" className="btn btn-success" onClick={this.handClicked}>Deal</a></h1>
           </div>
-        </div>
+
+            </div>
       </div>
     )
   }
