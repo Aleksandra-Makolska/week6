@@ -116,7 +116,6 @@ var App = React.createClass({
           <div className="col-sm-">
             <h1><a href="#" className="btn btn-success" onClick={this.handClicked}>Deal</a></h1>
           </div>
-
             </div>
       </div>
     )
